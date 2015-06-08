@@ -11,7 +11,12 @@ module.exports = function(dir, ext, callback) {
 				result.push(file);
 			}
 		});
-		
+
+		// list = list.filter(function (file) {
+	  // 	 return file.split('.')[1] == ext;
+		// });
+		// result = list;
+
 		callback(null, result);
 	});
 };
